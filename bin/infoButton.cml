@@ -1,0 +1,21 @@
+<cml css="../../menu_styles.css">
+
+<LibraryKit>
+	<Library type="swf" src="library/assets/openexhibits_assets.swf" />	
+</LibraryKit>
+
+<Button id="info-btn" class="info_btn" dispatch="down:info" hit="info-hit" initial="info-up" down="info-down" up="info-up" out="info-up">
+	<Container id="info-up">
+		<Graphic alpha="1" shape="circle" radius="20" lineStroke="0" color="0x000000" />	
+		<SWF alpha="1" x="15" y="8" color="0xFFFFFF" scale="1.6" classRef="org.openexhibits.assets.Info" />
+	</Container>
+	<Container id="info-down">
+		<Graphic id="info-bg-down" shape="circle" radius="20" lineStroke="0" color="0x000000" />	
+		<SWF alpha="1" x="15" y="8" color="0xCCCCCC" scale="1.6" classRef="org.openexhibits.assets.Info" />
+	</Container>	
+	<Container id="info-hit">
+		<Graphic id="info-hit-bg" shape="circle" radius="20" color="0x666666" alpha="0" />
+	</Container>
+</Button>
+
+</cml>

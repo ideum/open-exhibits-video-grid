@@ -1,0 +1,4 @@
+# Ignore Files
+bin/library/images
+bin/library/videos
+obj/

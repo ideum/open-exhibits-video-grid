@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cml tuio="false" simulator="false">
+
+<StageKit fullscreen="true" />
+
+<Album horizontal="false" width="1920" height="1080" mouseChildren="true" clusterBubbling="true" backgroundAlpha="0"> 
+	
+	<Album x="0" y="0" margin="5" width="1920" height="360" mouseChildren="true" clusterBubbling="true" backgroundAlpha="0">	
+
+	<RenderKit dataRootTag="row1">
+		<Renderer>
+		<TouchContainer id="gridObject" width="480" height="360" mouseChildren="true">
+			<Graphic shape="rectangle" width="480" height="360" fill="color" color="0x000000" lineStroke="0" alpha="0.9"/>
+				<TouchContainer mouseChildren="false" targetParent="true">
+					<Text y="320" x="10" text="{text}" color="0xffffff" fontSize="17" width="460" font="OpenSansRegular" multiline="true" wordWrap="true"/>
+				</TouchContainer>
+			<VideoViewer rotation="0" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+	
+	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
+		<Video class="video_element" src="{video}" autoplay="true" loop="true" width="480" height="320"/>
+	</TouchContainer>
+	
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0x000000" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>
+		<Container x="20" y="40">
+			<Text class="title" fontSize="17" paddingRight="20" color="0xffffff" border="false" font="OpenSansRegular" selectable="false" text="{info}" wordWrap="true" multiline="true"/>		
+		</Container>
+	</TouchContainer>
+	
+	<Menu class="menu_container" x="0" y="-80" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+		<Include src="infoButton.cml"/>
+		<Include src="playButton.cml"/>
+		<Include src="pauseButton.cml"/>
+	</Menu>
+	
+	<GestureList>
+
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</VideoViewer>
+		</TouchContainer>
+		</Renderer>
+
+	<RendererData>
+
+	<row1>
+		<video>library/videos/big-earth_x264.mp4</video>
+		<info>Though sometimes it feels like a small world, there’s no doubt that we live on one big planet! “Big Earth” is a stunning view of rotation and beautiful view of the earth’s atmosphere.</info>
+		<text>Big Earth</text>
+		<autoplay>true</autoplay>
+	</row1>
+	
+	<row1>
+		<video>library/videos/nasa-mission-to-jupiter-ready-for-launch-sNMOOjemMG8.mp4</video>
+		<info>NASA's Juno spacecraft is ready for launch. The solar-powered spacecraft will arrive at Jupiter in July 2016 and orbit its poles 33 times to find out more about the gas giant's interior, atmosphere and aurora. Juno is currently scheduled to launch from the Cape Canaveral Air Force Station.</info>
+		<text>NASA Mission to Jupiter</text>
+		<autoplay>false</autoplay>
+	</row1>
+	
+	
+	<row1>
+		<video>library/videos/particle-big-bang_x264.mp4</video>
+		<info>Stunning visual interpretation representing how the universe began.</info>
+		<text>Big Bang</text>
+		<autoplay>false</autoplay>
+	</row1>
+	
+	
+	<row1>
+		<video>library/videos/NASAKennedy-fjwcssuUb5Y.mp4</video>
+		<info>The Delta II rocket lights the evening sky as STEREO heads into space. STEREO (Solar Terrestrial Relations Observatory) is a two-y The Delta II rocket lights the evening sky as STEREO heads into space. STEREO (Solar Terrestrial Relations Observatory) is a two-year mission using two nearly identical observatories, one ahead of Earth in its orbit and the other trailing behind.</info>
+		<text>NASA STEREO Launch</text>
+		<autoplay>false</autoplay>
+	</row1>
+	
+	
+	<row1>
+		<video>library/videos/galactic-awe (1)_x264.mp4</video>
+		<info>Stunning motion that uses real NASA images to bring the beauty of outer space to life.</info>
+		<text>Galactic Awe</text>
+		<autoplay>false</autoplay>
+	</row1>
+	
+	<row1>
+		<video>library/videos/freeafricangiraffes_x264.mp4</video>
+		<info>Group of seven giraffes grazing on the serengeti plains in Africa and the simplicity of their wild freedom. This video was shot on location in Tanzania, Africa without disturbing the animals or interrupting their normal behavior.</info>
+		<text>Wild African Giraffes</text>
+		<autoplay>false</autoplay>
+	</row1>
+	
+	</RendererData>
+
+	</RenderKit>
+
+	</Album>
+	
+		<Album x="0" y="0" margin="5" width="1920" height="360" mouseChildren="true" clusterBubbling="true" backgroundAlpha="0">	
+
+	<RenderKit dataRootTag="row2">
+		<Renderer>
+		<TouchContainer id="gridObject" width="480" height="360" mouseChildren="true">
+			<Graphic shape="rectangle" width="480" height="360" fill="color" color="0x000000" lineStroke="0" alpha="0.9"/>
+				<TouchContainer mouseChildren="false" targetParent="true">
+					<Text y="320" x="10" text="{text}" color="0xffffff" fontSize="17" width="460" font="OpenSansRegular" multiline="true" wordWrap="true"/>
+				</TouchContainer>
+			<VideoViewer rotation="0" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+	
+	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
+		<Video class="video_element" src="{video}" autoplay="true" loop="true" width="480" height="320"/>
+	</TouchContainer>
+	
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0x000000" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>
+		<Container x="20" y="40">
+			<Text class="title" fontSize="17" paddingRight="20" color="0xffffff" border="false" font="OpenSansRegular" selectable="false" text="{info}" wordWrap="true" multiline="true"/>		
+		</Container>
+	</TouchContainer>
+	
+	<Menu class="menu_container" x="0" y="-80" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+		<Include src="infoButton.cml"/>
+		<Include src="playButton.cml"/>
+		<Include src="pauseButton.cml"/>
+	</Menu>
+	
+	<GestureList>
+
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</VideoViewer>
+		</TouchContainer>
+		</Renderer>
+
+	<RendererData>
+
+	<row2>
+		<video>library/videos/freeleopardinfield_x264.mp4</video>
+		<info>Beautifully powerful leopard grazing the plains of Africa before laying down to rest.</info>
+		<text>Leopard on African Plains</text>
+		<autoplay>false</autoplay>
+	</row2>
+	
+	<row2>
+		<video>library/videos/galaxy-center_x264.mp4</video>
+		<info>Journey into outer space and right on the edge of a beautiful galaxy.</info>
+		<text>Galaxy Center</text>
+		<autoplay>true</autoplay>
+	</row2>
+	
+	
+	<row2>
+		<video>library/videos/freeseaturtleswimming_x264.mp4</video>
+		<info>A large sea turtle gracefully swims over the top of a brilliantly colored coral reef underwater.</info>
+		<text>Sea Turtle Swimming Over Coral Reef</text>
+		<autoplay>true</autoplay>
+	</row2>
+	
+	
+	<row2>
+		<video>library/videos/Earth_Illuminated_120808_720p.mp4</video>
+		<info>From high above the Earth, the International Space Station (ISS) provides a unique vantage point to view our home planet. Stunning time-lapse photography of cities, aurora, lightning and other sights are seen from orbit.</info>
+		<text>Earth Illuminated</text>
+		<autoplay>false</autoplay>
+	</row2>
+	
+	
+	<row2>
+		<video>library/videos/NASA.mp4</video>
+		<info>Educational video from NASA's e-clip collection.</info>
+		<text>NASA Planetary Science</text>
+		<autoplay>false</autoplay>
+	</row2>
+	
+	<row2>
+		<video>library/videos/NASAKennedy-I5v2dhGRu2w.mp4</video>
+		<info>THEMIS heads for space to study the Northern Lights. The mission will investigate what causes auroras in the Earth's atmosphere to THEMIS heads for space to study the Northern Lights. The mission will investigate what causes auroras in the Earth's atmosphere to dramatically change from slowly shimmering waves of light to wildly shifting streaks of bright color.</info>
+		<text>NASA THEMIS Launch</text>
+		<autoplay>false</autoplay>
+	</row2>
+	
+	</RendererData>
+
+	</RenderKit>
+
+	</Album>
+	
+			<Album x="0" y="0" margin="5" width="1920" height="360" mouseChildren="true" clusterBubbling="true" backgroundAlpha="0">	
+
+	<RenderKit dataRootTag="row2">
+		<Renderer>
+		<TouchContainer id="gridObject" width="480" height="360" mouseChildren="true">
+			<Graphic shape="rectangle" width="480" height="360" fill="color" color="0x000000" lineStroke="0" alpha="0.9"/>
+				<TouchContainer mouseChildren="false" targetParent="true">
+					<Text y="320" x="10" text="{text}" color="0xffffff" fontSize="17" width="460" font="OpenSansRegular" multiline="true" wordWrap="true"/>
+				</TouchContainer>
+			<VideoViewer rotation="0" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+	
+	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
+		<Video class="video_element" src="{video}" autoplay="true" loop="true" width="480" height="320"/>
+	</TouchContainer>
+	
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0x000000" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>
+		<Container x="20" y="40">
+			<Text class="title" fontSize="17" paddingRight="20" color="0xffffff" border="false" font="OpenSansRegular" selectable="false" text="{info}" wordWrap="true" multiline="true"/>		
+		</Container>
+	</TouchContainer>
+	
+	<Menu class="menu_container" x="0" y="-80" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+		<Include src="infoButton.cml"/>
+		<Include src="playButton.cml"/>
+		<Include src="pauseButton.cml"/>
+	</Menu>
+	
+	<GestureList>
+
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</VideoViewer>
+		</TouchContainer>
+		</Renderer>
+
+	<RendererData>
+
+	<row3>
+		<video>library/videos/eagle-nebula_x264.mp4</video>
+		<info>This video is based off of the real Eagle Nebula founded by Jean-Philippe de Cheseaux in 1745.</info>
+		<text>Eagle Nebula</text>
+		<autoplay>false</autoplay>
+	</row3>
+	
+	<row3>
+		<video>library/videos/NASA_Launchpad_Shuttle_Experience_HD.mp4</video>
+		<info>Only 355 humans have ever flown on the shuttle. Join NASA Astronaut Al Drew as he shares some personal experiences about his flights and what made the trips so memorable. See why the shuttle experience has such historical significance.</info>
+		<text>NASA Launchpad: The Shuttle Experience</text>
+		<autoplay>false</autoplay>
+	</row3>
+	
+	
+	<row3>
+		<video>library/videos/NASA_Space_Weather_2.mp4</video>
+		<info>What is Space Weather presented by NASA.</info>
+		<text>What is space weather?</text>
+		<autoplay>false</autoplay>
+	</row3>
+	
+	
+	<row3>
+		<video>library/videos/ny_x264.mp4</video>
+		<info>Niagara Falls shows the powerful natural waterfalls of Niagara from the New York side of the river.</info>
+		<text>Niagara Falls from the New York Side</text>
+		<autoplay>false</autoplay>
+	</row3>
+	
+	
+	<row3>
+		<video>library/videos/Sn-73VirtualSelf.mp4</video>
+		<info>An avatar is a virtual representation of ourselves in the digital world, but it can also affect our real-world self. Watch how in this episode of Science Nation.</info>
+		<text>Virtual Self</text>
+		<autoplay>false</autoplay>
+	</row3>
+	
+	<row3>
+		<video>library/videos/Sn-70FascinatingFlight.mp4</video>
+		<info>Using wind tunnels, lasers and high-speed cameras, University of Montana researcher Ken Dial studies ground birds for clues about the origins and mechanics of flight.</info>
+		<text>Science Nation - Fascinating Flight</text>
+		<autoplay>false</autoplay>
+	</row3>
+	
+	</RendererData>
+
+	</RenderKit>
+
+	</Album>
+	
+					<Album x="0" y="0" margin="5" width="1920" height="360" mouseChildren="true" clusterBubbling="true" backgroundAlpha="0">	
+
+	<RenderKit dataRootTag="row2">
+		<Renderer>
+		<TouchContainer id="gridObject" width="480" height="360" mouseChildren="true">
+			<Graphic shape="rectangle" width="480" height="360" fill="color" color="0x000000" lineStroke="0" alpha="0.9"/>
+				<TouchContainer mouseChildren="false" targetParent="true">
+					<Text y="320" x="10" text="{text}" color="0xffffff" fontSize="17" width="460" font="OpenSansRegular" multiline="true" wordWrap="true"/>
+				</TouchContainer>
+			<VideoViewer rotation="0" mouseChildren="true" disableNativeTransform="false" disableAffineTransform="false">
+	
+	<TouchContainer class="video_container" visible="true" targetParent="true" mouseChildren="false">
+		<Video class="video_element" src="{video}" autoplay="true" loop="true" width="480" height="320"/>
+	</TouchContainer>
+	
+	<TouchContainer class="info_container" visible="false" targetParent="true" mouseChildren="false" >
+		<Graphic color="0x000000" alpha="0.6" lineStroke="0" class="info_bg" shape="rectangle"/>
+		<Container x="20" y="40">
+			<Text class="title" fontSize="17" paddingRight="20" color="0xffffff" border="false" font="OpenSansRegular" selectable="false" text="{info}" wordWrap="true" multiline="true"/>		
+		</Container>
+	</TouchContainer>
+	
+	<Menu class="menu_container" x="0" y="-80" alpha="0.6" position="bottom" paddingLeft="30" paddingBottom="-50" paddingRight="20" autoHide="true" visible="false">
+		<Include src="infoButton.cml"/>
+		<Include src="playButton.cml"/>
+		<Include src="pauseButton.cml"/>
+	</Menu>
+	
+	<GestureList>
+
+		<Gesture ref="tap" gestureOn="true"/>
+	</GestureList>
+	
+</VideoViewer>
+		</TouchContainer>
+		</Renderer>
+
+	<RendererData>
+
+
+	<row4>
+		<video>library/videos/freegrandcanyonarizona_x264.mp4</video>
+		<info>The notoriously large Grand Canyon gorge from deep within the Arizona desert. With bright blue skies and rich Earth textures.</info>
+		<text>Grand Canyon in Arizona</text>
+		<autoplay>false</autoplay>
+	</row4>
+	
+	<row4>
+		<video>library/videos/scubadivers_x264.mp4</video>
+		<info>A group of scuba divers exploring the reefs of Australia slowly move deeper into the bright, blue ocean.</info>
+		<text>Scuba Divers in Ocean</text>
+		<autoplay>false</autoplay>
+	</row4>
+	
+	
+	<row4>
+		<video>library/videos/earth.mp4</video>
+		<info>Zoom to Earth from outer space.</info>
+		<text>Earth Zoom</text>
+		<autoplay>false</autoplay>
+	</row4>
+	
+	
+	<row4>
+		<video>library/videos/freeowlintree_x264.mp4</video>
+		<info>Beautiful brown owl perched on the bare branch of a tree gazing over the landscape.</info>
+		<text>Owl Perched in Tree</text>
+		<autoplay>false</autoplay>
+	</row4>
+	
+	
+	<row4>
+		<video>library/videos/Sn-58CitizenScience.mp4</video>
+		<info>Volunteers help scientists understand birds and changing habitats. Citizen Science has been around for centuries, with lay people collecting data and making observations for scientists in a variety of fields. And, citizen scientists are contributing to discoveries as much in the 21st century as ever before. </info>
+		<text>Science Nation - Citizen Science</text>
+		<autoplay>false</autoplay>
+	</row4>
+	
+	<row4>
+		<video>library/videos/freelilypadtimelapse_x264.mp4</video>
+		<info>Group of lily pads in a pond with vibrant greens and reds. Meanwhile, flowers begin to bloom and open up towards the warmth of the sun.</info>
+		<text>Colorful Lily Pad</text>
+		<autoplay>false</autoplay>
+	</row4>
+	
+	</RendererData>
+
+	</RenderKit>
+
+	</Album>
+
+</Album>
+
+</cml>
